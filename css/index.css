@@ -1,0 +1,108 @@
+body,h2{
+    margin: 0;
+    padding: 0;
+
+}
+h2,h3{
+    text-align: center;
+}
+.main{
+    
+    margin: auto;
+}
+.container-buttons{
+    margin: auto;
+    padding: 50px;
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.desc-toggle{
+    margin: 30px;
+    display: block;
+    padding: 20px 35px;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+.none{
+    visibility: hidden;
+}
+.section{
+    overflow: hidden;
+    border: 1px solid black;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+}
+.objeto1{
+    position: absolute;
+    top: -90px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+    
+    background-color: aqua;
+}
+
+.objeto2{
+    position: absolute;
+    bottom:  -90px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+    
+    background-color: aqua;
+}
+.objeto3{
+    position: absolute;
+    right: -85px;
+    
+    width: 100px;
+    height: 200px;
+    
+    background-color: aqua;
+}
+.objeto4{
+    position: absolute;
+    left: -85px;
+    width: 100px;
+    height: 200px;
+    
+    background-color: aqua;
+}
+.header, .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #F0f0f0
+}
+
+#toggle-1:checked + #objeto1{
+    transition: transform 0.8s ease-in;
+    top: 0;
+}
+
+#toggle-2:checked + #objeto2{
+    transition: transform 0.8s ease-in;
+    bottom: 0;
+}
+#toggle-3:checked + #objeto3{
+    transition: transform 0.8s ease-in;
+    right: 0;
+}
+#toggle-4:checked + #objeto4{
+    transition: transform 0.8s ease-in;
+    left: 0;
+}
